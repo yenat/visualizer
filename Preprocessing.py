@@ -11,7 +11,8 @@ from pyspark import SparkContext
 from pyspark.sql import SQLContext
 from sklearn import preprocessing
 import numpy as np
-
+from sklearn.feature_selection import SelectKBest
+from sklearn.feature_selection import chi2
 
 # Read dataset from file ckd.csv
 
@@ -56,15 +57,15 @@ df.toPandas().to_csv('nominals.csv')
 data = pd.read_csv("nominals.csv" ) 
   
 # dropping passed columns 
-data.drop(["rbc", "pc","pcc","ba","htn","dm","cad","appet","pe","ane"], axis = 1, inplace = True) 
+#data.drop(["rbc", "pc","pcc","ba","htn","dm","cad","appet","pe","ane"], axis = 1, inplace = True) 
 data.drop(["Unnamed: 0"], axis = 1, inplace = True)   
-
+data.drop(data.iloc[:, 0:10], inplace = True, axis = 1) 
+print(data.shape)  # gives a tuple with the shape of DataFrame
 
 #combine the original dataset with the changed nominal data
 merged = dataset.join(data, how='right')
-#merged = merged.to_csv("nominalss.csv" ) 
+merged.to_csv("joined.csv")
 merged.drop(["rbc", "pc","pcc","ba","htn","dm","cad","appet","pe","ane"], axis = 1, inplace = True) 
-#merged.drop(merged.columns[0], axis = 1, inplace = True)
 
 
 cols = list(merged.columns.values) #Make a list of all of the columns in the df
@@ -72,11 +73,17 @@ cols.pop(cols.index('class')) #Remove b from list
 
 #merged = merged[cols+['class']] #Create new dataframe with columns in the order you want
 merged = merged[cols] # remove the 'class' column to prepare for normalization
-
+merged.to_csv("not_normalized.csv")
 #normalize the dataset with z-score
 for col in cols:
     col_N = col + '_N'
-    merged[col_N] = (merged[col] - merged[col].mean())/merged[col].std(ddof=0)
+    #merged[col_N] = (merged[col] - merged[col].mean())/merged[col].std(ddof=0)
+    merged[col_N] = (merged[col] - merged[col].min())/(merged[col].max() - merged[col].min())
+
+#merged.drop(["age","bp","sg","al","su","bgr","bu","sc","sod","pot","hemo","pcv","wbcc","rbcc","rbc_new", "pc_new","pcc_new","ba_new","htn_new","dm_new","cad_new","appet_new","pe_new","ane_new"], axis = 1, inplace = True) 
+
+merged.drop(merged.iloc[:, 0:24], inplace = True, axis = 1) 
+
 
 
 merged.to_csv("normalized.csv")
