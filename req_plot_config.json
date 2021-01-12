@@ -1,13 +1,13 @@
 {
   "embeddings": [
     {
-      "tensorName": "requirements Embeddings",
-      "tensorShape": [
+      "tensorname": "requirements embeddings",
+      "tensorshape": [
         57,
         50
       ],
-      "tensorPath": "https://raw.githubusercontent.com/yenat/Kidney-Disease-detection-using-data-mining-/master/cia_new_tensor.tsv",
-      "metadataPath": "https://raw.githubusercontent.com/yenat/Kidney-Disease-detection-using-data-mining-/master/cia_new_metadata.tsv"
+      "tensorpath": "https://raw.githubusercontent.com/yenat/visualizer/master/cia_new_tensor.tsv",
+      "metadatapath": "https://raw.githubusercontent.com/yenat/visualizer/master/cia_new_metadata.tsv"
     }
   ]
 }
