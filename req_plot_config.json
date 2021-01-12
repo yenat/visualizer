@@ -6,8 +6,8 @@
         57,
         50
       ],
-      "tensorpath": "https://raw.githubusercontent.com/yenat/visualizer/master/cia_new_tensor.tsv",
-      "metadatapath": "https://raw.githubusercontent.com/yenat/visualizer/master/cia_new_metadata.tsv"
+      "tensorpath": "https://raw.githubusercontent.com/yenat/visualizer/master/cia_plot_tensor.tsv",
+      "metadatapath": "https://raw.githubusercontent.com/yenat/visualizer/master/cia_plot_metadata.tsv"
     }
   ]
 }
