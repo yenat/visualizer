@@ -1,57 +1,58 @@
-*dt_0
-*dt_1
-*dt_2
-*dt_3
-*dt_4
-*dt_5
-*dt_6
-*dt_7
-*dt_8
-*dt_9
-*dt_10
-*dt_11
-*dt_12
-*dt_13
-*dt_14
-*dt_15
-*dt_16
-*dt_17
-*dt_18
-*dt_19
-*dt_20
-*dt_21
-*dt_22
-*dt_23
-*dt_24
-*dt_25
-*dt_26
-*dt_27
-*dt_28
-*dt_29
-*dt_30
-*dt_31
-*dt_32
-*dt_33
-*dt_34
-*dt_35
-*dt_36
-*dt_37
-*dt_38
-*dt_39
-*dt_40
-*dt_41
-*dt_42
-*dt_43
-*dt_44
-*dt_45
-*dt_46
-*dt_47
-*dt_48
-*dt_49
-*dt_50
-*dt_51
-*dt_52
-*dt_53
-*dt_54
-*dt_55
-*dt_56
+Issue_key	Summary
+PB-95	Backend - Groups CRUD
+PB-86	Frontend - Bridge Relations
+PB-85	Frontend - Bridge Categories
+PB-84	Updates to Bridge Creation
+PB-82	Updates to User management/user list view
+PB-81	Updates to Profile Management
+PB-80	Updates to Password Recovery 
+PB-79	Updates to User login with email
+PB-78	Updates to User Registration
+PB-77	Backend Code Structuring
+PB-74	Create custom relations 
+PB-70	Back-end Relation CRUD
+PB-69	Back-end Category CRUD
+PB-66	Backend- Communication module - Text chat on page
+PB-64	Backend- On-page Presence
+PB-62	Backend- Bridge Competition
+PB-61	Backend - Bridge Creation - Bridge voting/rating module
+PB-58	Backend - Bridge Creation - Page and content bridge
+PB-57	Backend- User Management - Blocking/Unblocking user
+PB-56	Backend- User Management - User list view
+PB-55	Backend- Profile Management
+PB-54	Backend - Password Recovery
+PB-53	Backend - User login - Username and Password login
+PB-52	Backend- User registration
+PB-47	Frontend - On-page Presence
+PB-45	Social - Group Breakouts
+PB-44	Social - Group Management
+PB-43	Frontend - Groups CRUD
+PB-41	Social - Direct messaging
+PB-40	Social - Content flaggin
+PB-39	Sharing
+PB-38	Nation Identification - Number
+PB-37	Nation list
+PB-36	Nation Management - Visibility 
+PB-35	Nation Management - Content
+PB-34	Nation Management - User
+PB-33	Nation management - Rule and policy setup
+PB-30	Notifications - Visibility
+PB-29	Notifications - Annotations CRUD on content
+PB-28	Notifications - Connected user status
+PB-27	Notifications - Content CRUD 
+PB-26	Communication module - Private chat
+PB-25	Communication module - Group chat
+PB-24	Frontend - Communication module - Text chat on page
+PB-23	Smart Tagging
+PB-22	Frontend - Bridge Competition
+PB-21	Admin Bridge Managing
+PB-20	Frontend - Bridge Creation - Bridge voting/rating module
+PB-19	Bridge Creation - Image annotation
+PB-17	Frontend - Bridge Creation - Page and content bridge
+PB-15	User Login - Social login
+PB-14	Frontend - User Management - Blocking/Unblocking user
+PB-13	Frontend - User Management - User list view
+PB-12	Frontend - Profile Management
+PB-11	Frontend -Password Recovery
+PB-10	Frontend - User login with email
+PB-9	Frontend - User registration
