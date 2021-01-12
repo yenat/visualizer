@@ -3,8 +3,8 @@
     {
       "tensorName": "requirements Embeddings",
       "tensorShape": [
-        642,
-        50
+        101,
+        20
       ],
       "tensorPath": "https://raw.githubusercontent.com/yenat/Kidney-Disease-detection-using-data-mining-/master/cia_new_tensor.tsv",
       "metadataPath": "https://raw.githubusercontent.com/yenat/Kidney-Disease-detection-using-data-mining-/master/cia_new_metadata.tsv"
